@@ -20,7 +20,9 @@ A: `React` is named React because of its ability to `react to changes in data`.
 React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces.
 The name `React` was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
 `React` is a `JavaScript-based UI development library`. `Facebook` and an `open-source developer community` run it.
+
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 
