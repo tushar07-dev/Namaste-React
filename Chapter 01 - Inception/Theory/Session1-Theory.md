@@ -25,7 +25,8 @@ React JS code :
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 React-dom JS code :
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
+for any specific version change version '18' with required versions. 
+for more details visit => https://legacy.reactjs.org/docs/cdn-links.html
 
 ## Q: What is `crossorigin in script tag`?
 A: The `crossorigin` attribute sets the mode of the request to an HTTP CORS Request. 
