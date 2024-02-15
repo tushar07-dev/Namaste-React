@@ -1,6 +1,56 @@
 ## Namaste React Course by Akshay Saini
 # _Chapter 01 - Inception_
 
+# TOtal ways to use React & ReactDom:
+1) By CDN Link on <Script>.
+2) 
+3) 
+4) 
+
+## Q: why Facebook maintain React & reactDOM two different folders(Repos) ?
+A: React does not only work on browser, It works on Mobile React  native, React 3d, different tipes of react is used. The react.development.js is core file. and other one ReactDOM is bridge between react & browsers to allows `React to interact with the DOM`.
+
+## What is the most expensive operation to componay which all differenct frameworks are fixing ?
+A: After we click somewhere, Some things get added somethings(Nodes) get(Nodes) or removed from DOm tree, Putting some nodes into the dome and removing the nodes is also an costly operation
+A: When user interaction triggers changes in the Document Object Model (DOM), such as adding or removing nodes, these manipulations incur significant resources, impacting the performance of an application or website.
+
+## const heading = React.createElement(a, b={}, c) ?
+A: `a` is  parameter which pass string Tag name 
+   `b` is  parameter which pass object which contains attributes 
+   `c` is  parameter which pass string which has childred
+heading return object not HTML tag, while it is rendering it converts react
+
+
+## using React.createElement we can create nested, single all kind of component and html pages. But this is complex as it increase the code.
+const parent2 = React.createElement(
+    "div",
+    { id: "prent2"},
+    [
+    React.createElement("div", { id: "child"}, [
+        React.createElement("h1", { id: "child1"}, "I`m an H1 tag"),
+        React.createElement("h2", { id: "child2"}, "I`m an H2 tag"),
+        React.createElement("h3", { id: "child3"}, "I`m an H3 tag"),
+    ]),
+    
+    React.createElement("div", { id: "child"}, [
+        React.createElement("h1", { id: "child1"}, "I`m an H1 tag"),
+        React.createElement("h2", { id: "child2"}, "I`m an H2 tag"),
+        React.createElement("h3", { id: "child3"}, "I`m an H3 tag"),
+    ])
+    ]
+);
+console.log(parent2); //object (React element)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent2);
+
+## JSX fix this problem, People think react can only written inside the JSX, But that not true. Jsx only make out life easy when we use tag?
+Yes, it matters alot as our code work sychronous way.
+
+## Does the order of tags matter in HTML ? (<html <head> <body <script> <script> <script> /> />).
+
+## Not all other frameworks in market is can not only applied to exciting app, You have to use complete folder app for other frameWorks
+## But react is just JS, can only work on small part of ur code also using ReactDOM 'root'. This is the beutie of React 
+
 ## Q: What is `Emmet`?
 A: `Emmet` is the essential toolkit for web-developers. It allows you to `type shortcuts` that are then expanded into full pieces of code for writing `HTML and CSS`, based on an abbreviation structure most developers already use that expands into full-fledged HTML markup and CSS rules.
 
