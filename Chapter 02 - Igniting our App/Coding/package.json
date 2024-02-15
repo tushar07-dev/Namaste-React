@@ -1,0 +1,27 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "learning react",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react",
+    "tushar",
+    "shelke",
+    "learning",
+    "javascript"
+  ],
+  "author": "tushar shelke",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

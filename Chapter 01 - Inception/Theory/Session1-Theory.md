@@ -3,7 +3,7 @@
 
 # TOtal ways to use React & ReactDom:
 1) By CDN Link on <Script>.
-2) 
+2) By using Parcel as dependancies & now can use by "import React from React;"
 3) 
 4) 
 

@@ -73,22 +73,41 @@ import ReactDOM from "react-dom/client";
 
 // create header element using JSX
 // JSX => React.createElement => Object => HTML (DOM) (babel does all the conversion)
+
+// React element :
 const heading = (
   <h1 id="h1" key="h1">
     This is JSX
   </h1>
 );
 
-// React Component 
-// Functional component - new way of writing component 
+const link = (
+  <a href="https://example.com" id="link" key="link">
+    Click here
+  </a>
+);
+
+// React Component :
+// Functional component - is function that return JSX code is functional component. 
 // Class component - old way of writing component
 
 // Title component is functional component
+// way1 with curly brace and without () for multi line with return
 const Title = () => {
+  return <h1 id="title" key="title">Namaste React</h1>
+}
+// way2 with curly bracy with () for multi line with return
+const Title2 = () => {
   return (
     <h1 id="title" key="title">Namaste React</h1>
   )
 }
+// way3- without {} with () without return 
+const Title3 = () => (<h1 id="title" key="title">Namaste React</h1>)
+
+// way3- without {} without ()  without return
+const Title4 = () => <h1 id="title" key="title">Namaste React</h1>
+
 // Header component is functional component
 const HeaderComponent = function (){
   return (
@@ -97,6 +116,8 @@ const HeaderComponent = function (){
       {/* we can also use <Title()> */}
       {/* we can also use <Title></Title> */}
       {console.log(10)}
+      {link} // adding React element inside React component
+      {header} // adding React element inside React component
     <h1>Namaste React Functional component</h1>
     <h2>This is h2 tag</h2>
     </div>
@@ -104,5 +125,9 @@ const HeaderComponent = function (){
 }
 // create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing react element inside root
+
+// to render react element  inside root 
+root.render(heading);
+
+// to render react compoent inside root
 root.render(<HeaderComponent/>);

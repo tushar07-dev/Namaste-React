@@ -45,6 +45,7 @@ A: The `type` attribute specifies the type of the script. The type attribute ide
 - `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
 - `text/typescript`: As the name suggest the script is written in `TypeScript`.
 
+
 ## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
 A: The Difference is stated below:
 - `{TitleComponent}`: This value describes the `TitleComponent` as a javascript expression or a variable. 

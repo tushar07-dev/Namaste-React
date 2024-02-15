@@ -11,9 +11,22 @@
 - What is `Reconciliation` in React?
 - What is `React Fiber`?
 - Why do we need `keys` in React?
+React optimize its render cycles of components of same level.so these component should have unique id, so DOM can identify it.
+e.g. Suppose we have total 5 restaurent cards. Then an new restautent card at 1st place is inseted. If there no ID then react will not able to uniquely identify card. rerender all 5+1 restaurents. To optimize this we need unique id i.e. key.
+
+People use index as key in map. It works fine no issues. But react itself says never you Index as key, 
+
+
 - Can we use `index as keys` in React?
-- What is `props in React`? Ways to.
+
+- What is `props in React`? Ways to ?
+A: Props is short form of properties, and as we know React component is js js function like that Props we pass to component are just that fucntion's arguyment.
+
 - What is `Config Driven UI`?
+
+
+#1 Decide Design what your page should look like by wire frame design 
+#2 Decide which will be the component we need to build & are these reusable
 
 
 ## Coding Assignment:

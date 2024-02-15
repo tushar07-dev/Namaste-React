@@ -4,7 +4,7 @@
 /*
  *** Parcel Feature ***
  * Created A Server
- * HMR - Hot Module Replacement
+ * HMR - Hot Module Replacement (Refresh browser)
  * File Watcher algorithm - C++ (Execute File when changes occur)
  * BUNDLING
  * MINIFY
