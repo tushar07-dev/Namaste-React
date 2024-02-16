@@ -28,7 +28,7 @@ A: Props is short form of properties, and as we know React component is js js fu
 #1 Decide Design what your page should look like by wire frame design 
 #2 Decide which will be the component we need to build & are these reusable
 
-
+## whenever a state veriable updates (serState call) react will rerender that component
 ## Coding Assignment:
 - Build a `Food Ordering App`
     - Think of a `cool name` for your app
